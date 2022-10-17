@@ -1,11 +1,27 @@
 # neural-network-from-scratch-
 
 
-Simple 1-layer neural network from Scratch in c++ language;
-Create .dat file for creating a plots (gnuplot)
+Simple 1-layer neural network from Scratch in C++ language; 
 
--2 options for insert the input data;
--Activation function - sigmoid 
--Predicted data is a 3 type of classes, that stored in a file.
 
-In the end, a meaning of weight-loss function  writting in a file ".dat", that you could plot via gnuplot 
+Create .dat file for creating a plot ( via gnuplot)
+
+-2 options for inserting of the input data; 
+-Activation function - sigmoid function;
+
+
+
+a.txt file : 
+
+1 0 0  //1 line is for mode of inserting data 2 - from a file 
+1 0 0 1 
+0 1 0 0
+0 0 1 0
+
+
+//first 3 column - type of inserting data  
+//the last - dessiring meaning of actication function
+
+
+
+In the end, a meaning of the weight-loss function written in a file ".dat", that you could plot via Gnuplot
