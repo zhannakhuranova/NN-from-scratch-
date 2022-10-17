@@ -172,18 +172,8 @@ int main()
 
 
 /*
-Int_t i = 3;
 
-	const std::vector<Int_t> v { 1, 3, 4};
-	const std::vector<Int_t> v2 { 4, 3, 4};
-
-	TCanvas*c  = new TCanvas("c1", "Graph Draw Options", 200, 10, 600, 400);
-	TGraph*gr =  new TGraph (i, &v[0], &v2[0]);
-
-	gr->Draw("AC*");
-*/
-
-	/*Gnuplot gr;
+`	Gnuplot gr;
 
 	gr << "set title 'Graph of Loss func(Weigh)'\n";
 	gr << "set xrange [-1:6]\nset yrange [-1:1]\n";
