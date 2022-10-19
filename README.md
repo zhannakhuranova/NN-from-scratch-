@@ -3,7 +3,7 @@
 
 ******************************************************************************
 
-Simple perceptron NN model from Scratch in C++ language with sigmoid activation function for solving classification problem with creation "hello.dat" file in the end,which you couild plot via Gnuplot.
+Simple perceptron NN model from Scratch in C++ language with sigmoid activation function for solving classification problem with creation "hello.dat" file in the end, which you couild plot via Gnuplot.
 -2 modes for inserting input data;
 
 
