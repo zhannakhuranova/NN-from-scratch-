@@ -1,11 +1,3 @@
-#include <stdio.h>
-#include <iostream>
-#include <fstream>
-#include <time.h> 
-#include <vector>
-#include <cmath>
-#include <string>
-#include <list> 
 
 #include "traini.h"
 
