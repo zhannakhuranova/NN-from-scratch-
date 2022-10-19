@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <iostream>
 #include <fstream>
-#include <time.h>
+#include <time.h> 
 #include <vector>
 #include <cmath>
 #include <string>
@@ -99,7 +99,8 @@ int main()
 	//int step = 1 / sz;
 
 
-	for (int i=0;i<sz*ite;i++) {
+	for (int i=0;i<sz*ite;i++) 
+	{
 
 			for ( int j=0;j<sz;j++) {
 
@@ -109,15 +110,15 @@ int main()
 					neuro = + wei.at(j) + inpu.at(j);
 					out << wei.at(j) << "			" << losfu.at(i) << std::endl;
 					//couvctr(wei);  
-								}
+						}
 
 
+		
 	neurov.push_back(neuro);
 	neuro=0;
 
 	out << std :: endl;  
 
-
-	 }
+       }
 
 }
