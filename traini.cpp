@@ -42,27 +42,26 @@ int main()
 	std::cout<< "}  " ; 
 
 	if ( choi == 0 ) {
-		  for ( int i=0; i<sz; i++)
-			{
-				std::cin>> valu;
-				inpu.push_back(valu); 
-	 }}
+		  for ( int i=0; i<sz; i++) 
+		  {    std::cin>> valu;
+			inpu.push_back(valu); }}
 				
 
 	if (choi == 1) {
-		for (int f=0; f<sz; f++) {
-			inpu.push_back(datafil[f]); 	} }
+		for (int f=0; f<sz; f++) 
+		  {
+			inpu.push_back(datafil[f]); } }
 
-			//couvctr(datafil);
-			datafil.erase( datafil.begin(), datafil.begin() + sz);
-			couvctr(datafil);
+	
+	//couvctr(datafil);
+	datafil.erase( datafil.begin(), datafil.begin() + sz);
+	couvctr(datafil);
 
 
 	std::vector <double> wei;
 
 	for (int t=0;t<sz;t++) {  
-		wei.push_back(rannum(-4.0, 4.0));
-	 }
+		wei.push_back(rannum(-4.0, 4.0)); }
 
 
 	double neuro;
@@ -79,15 +78,17 @@ int main()
 				ki++;
 
 				if (ki == sz) {
-					pred_da = datafil[i + 1];   } }
-			}
+					pred_da = datafil[i + 1]; 
+	} }}
 				
 
 
 	std::cout << " Pred data is... " << pred_da<< std::endl;
 
 	std::vector <double> losfu;
-	std::vector<double> neurov;
+	std::vector <double> neurov;
+	
+	
 	neurov.push_back(neuro);
 
 	std::ofstream out;
@@ -96,13 +97,12 @@ int main()
 
 
 	double neu;
-	//int step = 1 / sz;
 
 
-	for (int i=0;i<sz*ite;i++) 
+	for (int i=0; i<sz*ite; i++) 
 	{
 
-			for ( int j=0;j<sz;j++) {
+			for ( int j=0; j<sz; j++) {
 
 					actfu(neurov.at(i));
 					losfu.push_back( 2*lr*(pred_da - actfu(neurov.at(i)))*(actfu(neurov.at(i)))*(1 - actfu(neurov.at(i))));
@@ -115,8 +115,8 @@ int main()
 
 		
 	neurov.push_back(neuro);
-	neuro=0;
-
+	neuro = 0;
+		
 	out << std :: endl;  
 
        }
