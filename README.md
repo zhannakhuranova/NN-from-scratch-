@@ -12,6 +12,8 @@ Simple perceptron NN model from Scratch in C++ language with sigmoid activation 
 In a.txt file : 
 1st line for second mode of inserting data;
 Matrix 3×4 for classify a data; 
-Input data 1 0 0 corresponding to 1
+Input data 1 0 0 corresponding to 1;
+
+
 0 1 0 to ZERO and 0 0 1 to the ZER0 also.
 
