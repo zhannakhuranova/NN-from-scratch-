@@ -26,9 +26,17 @@ Features:
 
 
 In a.txt file : 
+
+
+
 1st line for second mode of inserting data;
 Matrix 3×4 for classify the data; 
-Input data "1 0 0" corresponding to "1"
 
-Data "0 1 0" to ZERO and "0 0 1" to the ZER0 also.
+
+Input data :
+
+
+"1 0 0" corresponding to "1"
+
+"0 1 0" to ZERO , "0 0 1" to the ZER0 also.
 
