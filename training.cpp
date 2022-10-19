@@ -10,13 +10,6 @@
 //#include "gnuplot-iostream.h"
 //
 #include <stddef.h>
-/*
-#include"TROOT.h"
-#include "TCanvas.h"
-#include "TGraph.h"
-#include "TRint.h"
-*/
-
 
 #define getNameandValues( val ) print_vector( val, #val )
 template <typename F>
