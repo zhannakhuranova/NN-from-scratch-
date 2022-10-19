@@ -25,7 +25,7 @@ std::cout<< name << " : { " ;
 			std ::cout <<"}" << std::endl; };
 
 double actfu(double n) {
-		return (1 / ( 1 + exp(-n)));} // sigmoid 
+		return (1 / ( 1 + exp(-n)));}    // sigmoid 
 
 float rannum(float Min, float Max) {
 		return ((float(rand()) / float(RAND_MAX)) * (Max - Min)) + Min;}
