@@ -3,8 +3,9 @@
 
 ******************************************************************************
 
-Simple perceptron NN model from Scratch in C++ language with sigmoid activation function for soving classification problem. Creating .dat file in the end( you can plot graph via gnuplot)
--2 options for inserting input data;
+Simple perceptron NN model from Scratch in C++ language with sigmoid activation function for solving classification problem with creation .dat file in the end (you can plot graph via Gnuplot)
+-2 modes for inserting input data;
+-
 
 
 
@@ -18,4 +19,4 @@ In a.txt file :
 
 
 In the end, a meaning of the weights and loss function written in a file ".dat",
-that you could plot via Gnuplot.
+that you could plot via Gnuplot ( the main goal is to minimize a loss function and maximize the weights)
