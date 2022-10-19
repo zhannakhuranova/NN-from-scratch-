@@ -3,7 +3,7 @@
 
 ******************************************************************************
 
-Simple perceptron NN model from Scratch in C++ language with tanh activation function for soving classification problem. Creating .dat file in the end( you can plot graph via gnuplot)
+Simple perceptron NN model from Scratch in C++ language with sigmoid activation function for soving classification problem. Creating .dat file in the end( you can plot graph via gnuplot)
 -2 options for inserting input data;
 
 
