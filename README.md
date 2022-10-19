@@ -29,8 +29,14 @@ In a.txt file :
 
 
 
-1st line for second mode of inserting data;
-Matrix 3×4 for classify the data; 
+1st line:
+
+for second mode of inserting data;
+
+
+Matrix 3×4:
+
+for classify the data; 
 
 
 Input data :
