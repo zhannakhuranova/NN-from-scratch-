@@ -22,13 +22,12 @@
 template <typename F>
 void print_vector (const std::vector<double> v, const char *name){
 
-
-	std::cout<< name << " : { " ;
+std::cout<< name << " : { " ;
 
 	for ( auto i : v) {
-
 		std::cout<< v[i]<<' '; }
-		std ::cout <<"}" << std::endl; };
+		std ::cout <<"}" << std::endl; 
+};
 
 
 double actfun(double n) {
@@ -82,8 +81,8 @@ int main()
 	std::cin >> choise;
 
 	int size ;
-	std::cout << "Enter size of array " ;
-	std::cin >> size;
+	std::cout << "Enter size of array " ; // 
+	std::cin >> size; // size for a.txt file shoulb be 3
 	int value;
 	std::cout << "Enter array" ;
 
@@ -106,20 +105,20 @@ int main()
 			Inputs.push_back(datafile[k]);
 		}
 	}
+	
+	
 	cout_vector(datafile);
 	datafile.erase(datafile.begin(), datafile.begin() + size);
 	cout_vector(datafile);
 
-
-
 	std::vector <double> Weigh;
 	for (int i = 0 ; i < size; i++) { // input_size
-		Weigh.push_back(RandomNumber (-4.0, 4));	}
+		Weigh.push_back (RandomNumber(-4.0,4));	}  // only for 1 0 0  data type, for other need to recalculate
 
 
 	double neuro;
 	for ( int i = 0; i < size; i++) {
-		neuro += Inputs[i] * Weigh[i];	}
+		neuro += Inputs[i]*Weigh[i];	}
 
 
 	double pred_data;
