@@ -20,19 +20,15 @@ int ite = 50;
 template <typename F>
 void pri_vec (const std::vector<double> v, const char *name){
 std::cout<< name << " : { " ;
-
 		for ( auto i : v) {
 			std::cout<< v[i]<<' '; }
 			std ::cout <<"}" << std::endl; };
 
-
 double actfu(double n) {
 		return (1 / ( 1 + exp(-n)));} // sigmoid 
 
-
 float rannum(float Min, float Max) {
 		return ((float(rand()) / float(RAND_MAX)) * (Max - Min)) + Min;}
-
 
 template <typename T>
 void couvctr( std::vector<T> &v) {
