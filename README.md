@@ -44,7 +44,9 @@ Input data :
 
 "1 0 0" corresponding to "1"
 
-"0 1 0" to ZERO , "0 0 1" to the ZER0 also.
+"0 1 0" to ZERO 
+
+"0 0 1" to the ZER0
 
 ******************************************************************************
 
