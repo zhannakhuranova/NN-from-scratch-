@@ -11,22 +11,22 @@ int main()
 	int n;
 
 	std::string filename  = ("/home/pidhii/t/a.txt");
-	std::vector <int> datafil;
+	std::vector <int> datafile;
 	std :: ifstream in (filename);
 
 	while (in >> n) {
-		datafil.push_back(n); }
+		datafile.push_back(n); }
 
 	in.close();
-	couvctr(datafil);
+	couvctr(datafile);
 
 	int choi;
-	std::cout << "( here or fro f... ) ? (0 : 1)" << std::endl;
+	std::cout << "( Read data from terminal or from file ) ? (0 : 1)" << std::endl;
 	std::cin >> choi;
 
 	int sz;
 	std::cout << "enter size of array " ;
-	std::cin >> sz;
+	std::cin >> sz; // size here corresponding to data type is be only 3, but you could change a.txt file for your data size
 
 	int valu;
 	std::cout << "enter array { " ;
@@ -45,9 +45,9 @@ int main()
 			inpu.push_back(datafil[f]); } }
 
 	
-	//couvctr(datafil);
-	datafil.erase( datafil.begin(), datafil.begin() + sz);
-	couvctr(datafil);
+	//couvctr(datafile);
+	datafil.erase( datafile.begin(), datafile.begin() + sz);
+	couvctr(datafile); // cout marix of the data 
 
 
 	std::vector <double> wei;
@@ -61,31 +61,31 @@ int main()
 		  neuro += inpu[i] * wei[i]; }
 
 
-	double pred_da;
+	double pred_da; // predicted data 
 	int ki= 0;
 
-	for (int i=0;i<datafil.size(); i++) {
+	for (int i=0;i<datafile.size(); i++) {
 
-			if (inpu[i] == datafil.at(i)) {
+			if (inpu[i] == datafile.at(i)) {
 				ki++;
 
 				if (ki == sz) {
-					pred_da = datafil[i + 1]; 
+					pred_da = datafile[i + 1]; 
 	} }}
 				
 
 
-	std::cout << " Pred data is... " << pred_da<< std::endl;
+	std::cout << " Predicted data is... " << pred_da<< std::endl;
 
 	std::vector <double> losfu;
-	std::vector <double> neurov;
+	std::vector <double> neurov; // vector of neurons 
 	
 	
 	neurov.push_back(neuro);
 
 	std::ofstream out;
 	out.open("hello.dat");
-	out << "Wei" << "				" << "lossfu" << std::endl;
+	out << "Weigh" << "				" << "lossfuction" << std::endl;
 
 
 	double neu;
