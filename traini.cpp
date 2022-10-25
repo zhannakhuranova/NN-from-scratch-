@@ -46,7 +46,7 @@ int main()
 
 	
 	//couvctr(datafile);
-	datafil.erase( datafile.begin(), datafile.begin() + sz);
+	datafile.erase( datafile.begin(), datafile.begin() + sz);
 	couvctr(datafile); // cout marix of the data 
 
 
