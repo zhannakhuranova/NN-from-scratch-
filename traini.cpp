@@ -19,14 +19,16 @@ int main()
 
 	in.close();
 	couvctr(datafile);
-
-	int choi;
-	std::cout << "( Read data from terminal or from file ) ? (0 : 1)" << std::endl;
-	std::cin >> choi;
-
+	
+	
 	int sz;
 	std::cout << "enter size of array " ;
 	std::cin >> sz; // size here corresponding to data type is be only 3, but you could change a.txt file for your data size
+
+	
+	int choi;
+	std::cout << "( Read data from terminal or from file ) ? (0 : 1)" << std::endl;
+	std::cin >> choi;
 
 	int valu;
 	std::cout << "enter array { " ;
