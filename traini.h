@@ -13,7 +13,7 @@
 #include <stddef.h>
 
 
-double lr = 0.3; // learning rate have choven optimal 
+double lr = 0.3; // learning rate opt
 int ite = 50;
  
 #define gnmvl( val ) print_vector( val, #val )
@@ -25,7 +25,7 @@ std::cout<< name << " : { " ;
 			std ::cout <<"}" << std::endl; };
 
 double actfu(double n) {
-		return (1 / ( 1 + exp(-n)));}    // sigmoid activation function 
+		return (1 / ( 1 + exp(-n)));}    // sigmoid act
 
 float rannum(float Min, float Max) {
 		return ((float(rand()) / float(RAND_MAX)) * (Max - Min)) + Min;}
@@ -35,12 +35,6 @@ void couvctr( std::vector<T> &v) {
 		for (int i = 0; i < v.size(); i++) {
 			std::cout << v[i] << ' ';}
 		std:: cout << std :: endl;};
-
-template <typename T>
-void couvctr_( std::vector<T> &v) { // cout vector function without std::endl in the end
-		for (int i = 0; i < v.size(); i++) {
-			std::cout << v[i] << ' ';}
-		};
 
 
 #endif
