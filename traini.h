@@ -1,36 +1,4 @@
 
-Skip to content
-Pull requests
-Issues
-Codespaces
-Marketplace
-Explore
-@zhannakhuranova
-zhannakhuranova /
-neural - network - from - scratch -
-Public
-
-Cannot fork because you own this repository and are not a member of any organizations.
-
-Code
-Issues
-Pull requests
-Actions
-Projects
-Wiki
-Security
-Insights
-
-Settings
-
-neural - network - from - scratch - / traini.h
-@zhannakhuranova
-zhannakhuranova Update traini.h
-Latest commit 9378444 Nov 15, 2022
-History
-1 contributor
-42 lines (29 sloc) 845 Bytes
-
 #ifndef TRAINI_H
 #define TRAINI_H
 
