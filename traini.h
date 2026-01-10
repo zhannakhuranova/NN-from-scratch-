@@ -21,7 +21,7 @@ template <typename F>
 void pri_vec (const std::vector<double> v, const char *name) {
 	std::cout << name << " : { " ;
 	for ( auto i : v) {
-		std::cout << v[i] << ' ';
+		std::cout << i << ' ';
 	}
 	std ::cout << "}" << std::endl;
 };
