@@ -38,6 +38,7 @@ int main()
 		for ( int i = 0; i < sz; i++)
 		{	std::cin >> valu;
 			inpu.push_back(valu);
+		 	assert(inpu.size() > sz && "Vector size must be smaller than input size.");
 		}
 	}
 
