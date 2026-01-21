@@ -9,10 +9,10 @@
 #include <time.h>
 #include <stddef.h>
 #include <cassert>
-typedef std::vector<double> v;
 
-double lr = 0.3; // learning rate 
-int iter = 50; // 
+typedef std::vector<double> v;
+inline double lr = 0.3;
+inline int iter = 50;   
 
 double actfu(double n) {
 	return (1 / ( 1 + exp(-n))); }    // sigmoid activation function
