@@ -28,7 +28,7 @@ inline float rannum(float Min, float Max) {
 
 //print func line print
 template <typename T>
-void couvctr( std::vector<T> &v, const char* name) {
+void couvctr( std::vector<T> &v,const std::string& name) {
 	if(v.empty()) { std::cout<<"EMPTY VECTOR"<<std::endl;}
 	std::cout<< name<<" { ";
 		for(const auto &i : v){
@@ -43,7 +43,7 @@ void gnmvl(std::vector<T>& vec) {
 }
 
 template <typename T>
-void couvctrow( std::vector<T> &v, const char* name) {
+void couvctrow( std::vector<T> &v, const std::string name) {
 	assert(!v.empty() && "Vector size size must be greater than zero.");
 	std::cout<< name<<" { ";
 		for(const auto &i : v){
