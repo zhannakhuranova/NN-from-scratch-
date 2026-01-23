@@ -12,24 +12,24 @@
 #include <stddef.h>
 #include <cassert>
 
-double lr = 0.01; // learning rate opt
-int iter = 60;
+inline double lr = 0.01; // learning rate opt
+inline int iter = 60;
 
-typedef std::vector<double> v;
+using std::vector<double> v;
 
 
-double actfu(double n) {
+inline double actfu(double n) {
 	return (1 / ( 1 + exp(-n)));
 }    // sigmoid ac
 
-float rannum(float Min, float Max) {
+inline float rannum(float Min, float Max) {
 	return ((float(rand()) / float(RAND_MAX)) * (Max - Min)) + Min;
 }
 
 //print func line print
 template <typename T>
 void couvctr( std::vector<T> &v, const char* name) {
-	if(!v.empty()) { std::cout<<"EMPTY VECTOR"<<std::endl;}
+	if(v.empty()) { std::cout<<"EMPTY VECTOR"<<std::endl;}
 	std::cout<< name<<" { ";
 		for(const auto &i : v){
 			std::cout<<i<<' ';}
